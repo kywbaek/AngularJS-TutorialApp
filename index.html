@@ -5,7 +5,7 @@
         <h1>Angular Tutorial App for Practice</h1>
     </header>
 
-    <main ng-app="myApp" ng-controller="myCtrl">
+    <main ng-app="myApp">
         <hr>
         <h2>1. Pre Intro</h2>
         <ul>
@@ -34,7 +34,7 @@
                 <!-- AngularJS expressions are written inside double braces: {{ expression }}. -->
             </li>
 
-            <li>
+            <li ng-controller="myCtrl">
                 First Name: <input type="text" ng-model="firstName2"><br>
                 Last Name: <input type="text" ng-model="lastName2"><br>
                 <br>
@@ -70,8 +70,16 @@
                 <!-- arrays -->
             </li>
         </ol>
-    </main>
 
+        <hr>
+        <h2>4. Modules</h2>
+        <ol>
+            <li>
+                <p ng-app="myApp" test-directive></p>
+                <!-- using directive -->
+            </li>
+        </ol>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="js/app.js"></script>
