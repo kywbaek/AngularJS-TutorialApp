@@ -10,6 +10,8 @@
     </header>
 
     <main ng-app="myApp">
+  <!--   The ng-app directive defines the root element of an AngularJS application.
+    The ng-app directive will auto-bootstrap (automatically initialize) the application when a web page is loaded. -->
         <hr>
         <h2>1. Pre Intro</h2>
         <ul>
@@ -80,8 +82,54 @@
         <ol>
             <li>
                 <p test-directive></p>
-                <!-- using directive -->
+              <!-- New directives are created by using the .directive function.
+                To invoke the new directive, make an HTML element with the same tag name as the new directive.
+                When naming a directive, you must use a camel case name, w3TestDirective, but when invoking it, you must use - separated name, w3-test-directive -->
             </li>
+        </ol>
+
+        <hr>
+        <h2>5. Directives</h2>
+        <ol>
+            <li ng-init="language5='Korean'">
+                <p>Language: <input type="text" ng-model="language5"></p>
+                <p>You wrote: {{ language5 }}</p>
+            </li>
+            <li ng-init="quantity5=1;price5=5">
+                Quantity: <input type="number" ng-model="quantity5">
+                Costs:    <input type="number" ng-model="price5">
+                Total in dollar: {{ quantity5 * price5 }}
+            </li>
+            <li>
+                <ul ng-init="names5=['Jani','Hege','Kai']">
+                    <h4>Using ng-repeat with array of strings</h4>
+                    <li ng-repeat="x in names5">
+                        {{ x }}
+                    </li>
+                </ul>
+            </li>
+            <li ng-init="names51=[
+            {name:'Jani',country:'Norway'},
+            {name:'Hege',country:'Sweden'},
+            {name:'Kai',country:'Denmark'}]">
+                <ul>
+                    <h4>Using ng-repeat with array of objects</h4>
+                    <li ng-repeat="x in names51">
+                        {{ x.name + ', ' + x.country }}
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <test-directive5></test-directive5>
+            </li>
+            <li>
+                <!-- directive: test-directive51 -->
+            </li>
+<!--             You can invoke a directive by using:
+            Element name - <test-directive></test-directive>
+            Attribute - <div test-directive></div>
+            Class - <div class="test-directive"></div>
+            Comment - "directive: test-directive" -->
         </ol>
     </main>
 
