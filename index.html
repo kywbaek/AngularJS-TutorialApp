@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!-- Calls to angular.module can only be compiled after the library has been loaded. -->
 </head>
@@ -151,7 +152,15 @@
                     Touched? {{myForm62.myAddress62.$touched}}
                 </form>
             </li>
-    <!-- he ng-model directive can provide status for application data (invalid, dirty, touched, error) -->
+<!-- he ng-model directive can provide status for application data (invalid, dirty, touched, error) -->
+            <li>
+                <form name="myForm63">
+                    Enter your name:
+                    <input name="myName63" ng-model="myText63" required>
+                </form>
+            </li>
+<!-- The ng-model directive provides CSS classes for HTML elements, depending on their status:The ng-model directive adds/removes the following classes, according to the status of the form field:
+ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty, ng-pending, ng-pristine -->
         </ol>
     </main>
 
