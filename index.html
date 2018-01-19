@@ -10,8 +10,7 @@
     </header>
 
     <main ng-app="myApp">
-  <!--   The ng-app directive defines the root element of an AngularJS application.
-    The ng-app directive will auto-bootstrap (automatically initialize) the application when a web page is loaded. -->
+  <!-- The ng-app directive defines the root element of an AngularJS application. The ng-app directive will auto-bootstrap (automatically initialize) the application when a web page is loaded. -->
         <hr>
         <h2>1. Pre Intro</h2>
         <ul>
@@ -45,9 +44,7 @@
                 Last Name: <input type="text" ng-model="lastName2"><br>
                 <br>
                 Full Name: {{firstName2 + " " + lastName2}}
-   <!--              AngularJS modules define AngularJS applications.
-                AngularJS controllers control AngularJS applications.
-                The ng-app directive defines the application, the ng-controller directive defines the controller. -->
+<!-- AngularJS modules define AngularJS applications. AngularJS controllers control AngularJS applications. The ng-app directive defines the application, the ng-controller directive defines the controller. -->
             </li>
         </ol>
 
@@ -82,9 +79,9 @@
         <ol>
             <li>
                 <p test-directive></p>
-              <!-- New directives are created by using the .directive function.
-                To invoke the new directive, make an HTML element with the same tag name as the new directive.
-                When naming a directive, you must use a camel case name, w3TestDirective, but when invoking it, you must use - separated name, w3-test-directive -->
+      <!-- New directives are created by using the .directive function.
+        To invoke the new directive, make an HTML element with the same tag name as the new directive.
+        When naming a directive, you must use a camel case name, w3TestDirective, but when invoking it, you must use - separated name, w3-test-directive -->
             </li>
         </ol>
 
@@ -135,7 +132,15 @@
         <hr>
         <h2>6. Model</h2>
         <ol>
-
+            <li>
+                <form name="myForm">
+                    Email:
+                    <input type="email" name="myAddress" ng-model="text">
+                    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+                </form>
+            </li>
+    <!-- The ng-model directive can provide type validation for application data (number, e-mail, required) The span will be displayed only if the expression in the ng-show attribute returns true.
+    If the property in the ng-model attribute does not exist, AngularJS will create one for you. -->
         </ol>
     </main>
 
