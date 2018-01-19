@@ -133,14 +133,25 @@
         <h2>6. Model</h2>
         <ol>
             <li>
-                <form name="myForm">
+                <form name="myForm61">
                     Email:
-                    <input type="email" name="myAddress" ng-model="text">
-                    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+                    <input type="email" name="myAddress61" ng-model="text">
+                    <span ng-show="myForm61.myAddress61.$error.email">Not a valid e-mail address</span>
                 </form>
             </li>
     <!-- The ng-model directive can provide type validation for application data (number, e-mail, required) The span will be displayed only if the expression in the ng-show attribute returns true.
     If the property in the ng-model attribute does not exist, AngularJS will create one for you. -->
+            <li>
+                <form name="myForm62" ng-init="myText62 = 'post@myweb.com'">
+                    Email:
+                    <input type="email" name="myAddress62" ng-model="myText62" required>
+                    <h4>Status</h4>
+                    Valid? {{myForm62.myAddress62.$valid}}
+                    Dirty? {{myForm62.myAddress62.$dirty}}
+                    Touched? {{myForm62.myAddress62.$touched}}
+                </form>
+            </li>
+    <!-- he ng-model directive can provide status for application data (invalid, dirty, touched, error) -->
         </ol>
     </main>
 
