@@ -85,3 +85,17 @@ app.controller('namesCtrl103', function($scope) {
 app.controller('costCtrl104', function($scope) {
     $scope.price = 99;
 });
+
+app.controller('namesCtrl105', function($scope) {
+    $scope.names = [
+        'Jani',
+        'Carl',
+        'Margareth',
+        'Hege',
+        'Joe',
+        'Gustav',
+        'Birgit',
+        'Mary',
+        'Kai'
+    ];
+});

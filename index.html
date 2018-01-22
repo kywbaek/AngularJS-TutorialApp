@@ -247,6 +247,13 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             <li ng-controller="costCtrl104">
                 <p>Price (formatted as currency): {{ price | currency }}</p>
             </li>
+            <li ng-controller="namesCtrl105">
+                <ul>(Filtered with 'i')
+                    <li ng-repeat="x in names | filter : 'i'">
+                        {{ x }}
+                    </li>
+                </ul>
+            </li>
         </ol>
     </main>
 
