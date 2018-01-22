@@ -81,3 +81,7 @@ app.controller('namesCtrl103', function($scope) {
         {name:'Kai',country:'Norway'}
         ];
 });
+
+app.controller('costCtrl104', function($scope) {
+    $scope.price = 99;
+});
