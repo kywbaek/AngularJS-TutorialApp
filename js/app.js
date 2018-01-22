@@ -90,15 +90,19 @@ app.controller('costCtrl104', function($scope) {
 });
 
 app.controller('namesCtrl105', function($scope) {
-    $scope.names = [
-        'Jani',
-        'Carl',
-        'Margareth',
-        'Hege',
-        'Joe',
-        'Gustav',
-        'Birgit',
-        'Mary',
-        'Kai'
-    ];
+    $scope.names = ['Jani','Carl','Margareth','Hege','Joe','Gustav','Birgit','Mary','Kai'];
+});
+
+app.filter('myFormat108', function() {
+    return function(x) {
+        let i, c, txt = "";
+        for (i = 0; i < x.length; i++) {
+            c = x[i];
+            if (i % 2 == 0) {
+                c = c.toUpperCase();
+            }
+            txt += c;
+        }
+        return txt;
+    };
 });

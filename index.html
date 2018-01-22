@@ -237,8 +237,8 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             <li ng-controller="personCtrl101">
                 <p>The name (lowercased) is {{ lastName | lowercase }}</p>
             </li>
-            <li ng-controller="namesCtrl103">
-                <ul>(Ordered by country)
+            <li ng-controller="namesCtrl103">(Ordered by country)
+                <ul>
                     <li ng-repeat="x in names | orderBy:'country'">
                         {{ x.name + ', ' + x.country }}
                     </li>
@@ -247,8 +247,8 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             <li ng-controller="costCtrl104">
                 <p>Price (formatted as currency): {{ price | currency }}</p>
             </li>
-            <li ng-controller="namesCtrl105">
-                <ul>(Filtered with 'i')
+            <li ng-controller="namesCtrl105">(Filtered with 'i')
+                <ul>
                     <li ng-repeat="x in names | filter : 'i'">
                         {{ x }}
                     </li>
@@ -275,6 +275,13 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                         <td>{{x.country}}</td>
                     </tr>
                 </table>
+            </li>
+            <li>(Uppercased every other letters)
+                <ul ng-controller="namesCtrl105">
+                    <li ng-repeat="x in names">
+                        {{x | myFormat108}}
+                    </li>
+                </ul>
             </li>
         </ol>
     </main>
