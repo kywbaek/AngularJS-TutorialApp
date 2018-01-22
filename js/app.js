@@ -55,3 +55,10 @@ app.controller('namesCtrl82', function($scope) {
         {name:'Manu Ginobli',country:'Argentina'}
     ];
 });
+
+app.run(function($rootScope) {
+    $rootScope.color = 'blue';
+});
+app.controller('myCtrl91', function($scope) {
+    $scope.color = "red";
+});

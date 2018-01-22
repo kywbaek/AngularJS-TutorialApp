@@ -203,7 +203,18 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
     Then the scope is the Model.
     The scope is a JavaScript object with properties and methods, which are available for both the view and the controller.  -->
         <ol>
+            <li>
+                <p>The rootScope's favorite color:</p>
+                <h1>{{color}}</h1>
 
+                <div ng-controller="myCtrl91">
+                    <p>The scope of the controller's favorite color:</p>
+                    <h1>{{color}}</h1>
+                </div>
+
+                <p>The rootScope's favorite color is still:</p>
+                <h1>{{color}}</h1>
+            </li>
         </ol>
     </main>
 
