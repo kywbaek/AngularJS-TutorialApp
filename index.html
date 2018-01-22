@@ -178,7 +178,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         The ng-controller directive defines the application controller.
         A controller is a JavaScript Object, created by a standard JavaScript object constructor. -->
         <ol>
-
+            <li ng-controller="personCtrl81">
+            First Name: <input type="text" ng-model="firstName"><br>
+            Last Name: <input type="text" ng-model="lastName"><br>
+            <br>
+            Full Name(executed as controller method): {{fullName()}}
+            </li>
         </ol>
     </main>
 

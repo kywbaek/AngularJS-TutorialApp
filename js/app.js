@@ -39,3 +39,11 @@ app.controller('myCtrl7', function($scope) {
         $scope.name = "Stephen Curry!!";
     }
 });
+
+app.controller('personCtrl81', function($scope) {
+    $scope.firstName = "Chris";
+    $scope.lastName = "Paul";
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+    };
+});
