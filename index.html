@@ -184,6 +184,13 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             <br>
             Full Name(executed as controller method): {{fullName()}}
             </li>
+            <li ng-controller="namesCtrl82">
+                <ul>
+                    <li ng-repeat="person in names">
+                        {{person.name + ' from ' + person.country}}
+                    </li>
+                </ul>
+            </li>
         </ol>
     </main>
 

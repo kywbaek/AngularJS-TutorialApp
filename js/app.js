@@ -47,3 +47,11 @@ app.controller('personCtrl81', function($scope) {
         return $scope.firstName + " " + $scope.lastName;
     };
 });
+
+app.controller('namesCtrl82', function($scope) {
+    $scope.names = [
+        {name:'Tony Parker',country:'France'},
+        {name:'Pao Gasol',country:'Spain'},
+        {name:'Manu Ginobli',country:'Argentina'}
+    ];
+});
