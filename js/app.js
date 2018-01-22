@@ -80,6 +80,9 @@ app.controller('namesCtrl103', function($scope) {
         {name:'Mary',country:'England'},
         {name:'Kai',country:'Norway'}
         ];
+    $scope.orderByMe = function(x) {
+    $scope.myOrderBy = x;
+  }
 });
 
 app.controller('costCtrl104', function($scope) {

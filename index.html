@@ -263,6 +263,19 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                     </li>
                 </ul>
             </li>
+            <li ng-controller="namesCtrl103">
+                (Orderby User Input)
+                <table border="1" width="100%">
+                    <tr>
+                        <th ng-click="orderByMe('name')">Name</th>
+                        <th ng-click="orderByMe('country')">Country</th>
+                    </tr>
+                    <tr ng-repeat="x in names | orderBy:myOrderBy">
+                        <td>{{x.name}}</td>
+                        <td>{{x.country}}</td>
+                    </tr>
+                </table>
+            </li>
         </ol>
     </main>
 
