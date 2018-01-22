@@ -231,7 +231,9 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         -uppercase: Format a string to upper case.
         Filters can be added to expressions by using the pipe character |, followed by a filter. -->
         <ol>
-
+            <li ng-controller="personCtrl101">
+                <p>The name (uppercased) is {{ lastName | uppercase }}</p>
+            </li>
         </ol>
     </main>
 

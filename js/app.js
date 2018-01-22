@@ -59,6 +59,11 @@ app.controller('namesCtrl82', function($scope) {
 app.run(function($rootScope) {
     $rootScope.color = 'blue';
 });
+
 app.controller('myCtrl91', function($scope) {
     $scope.color = "red";
+});
+
+app.controller('personCtrl101', function($scope) {
+    $scope.lastName = "Anderson";
 });
