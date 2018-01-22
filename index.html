@@ -237,6 +237,13 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             <li ng-controller="personCtrl101">
                 <p>The name (lowercased) is {{ lastName | lowercase }}</p>
             </li>
+            <li ng-controller="namesCtrl103">
+                <ul>(Ordered by country)
+                    <li ng-repeat="x in names | orderBy:'country'">
+                        {{ x.name + ', ' + x.country }}
+                    </li>
+                </ul>
+            </li>
         </ol>
     </main>
 

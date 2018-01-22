@@ -67,3 +67,17 @@ app.controller('myCtrl91', function($scope) {
 app.controller('personCtrl101', function($scope) {
     $scope.lastName = "Anderson";
 });
+
+app.controller('namesCtrl103', function($scope) {
+    $scope.names = [
+        {name:'Jani',country:'Norway'},
+        {name:'Carl',country:'Sweden'},
+        {name:'Margareth',country:'England'},
+        {name:'Hege',country:'Norway'},
+        {name:'Joe',country:'Denmark'},
+        {name:'Gustav',country:'Sweden'},
+        {name:'Birgit',country:'Denmark'},
+        {name:'Mary',country:'England'},
+        {name:'Kai',country:'Norway'}
+        ];
+});
