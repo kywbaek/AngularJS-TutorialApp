@@ -111,3 +111,12 @@ app.controller('myCtrl111', function($scope, $location) {
     $scope.myUrl = $location.absUrl();
 });
 // Note that the $location service is passed in to the controller as an argument. In order to use the service in the controller, it must be defined as a dependency.
+
+app.controller('myCtrl112', function($scope, $http) {
+  $http.get("httpServiceTest.htm").then(function (response) {
+      $scope.myWelcome = response.data;
+  }, function(response) {
+    $scope.myWelcome = "There are errors";
+  });
+});
+// The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.
