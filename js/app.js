@@ -110,3 +110,4 @@ app.filter('myFormat108', function() {
 app.controller('myCtrl111', function($scope, $location) {
     $scope.myUrl = $location.absUrl();
 });
+// Note that the $location service is passed in to the controller as an argument. In order to use the service in the controller, it must be defined as a dependency.
