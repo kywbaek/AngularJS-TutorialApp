@@ -128,3 +128,10 @@ app.controller('myCtrl113', function($scope, $timeout) {
   }, 2000);
 });
 // The $timeout service is AngularJS' version of the window.setTimeout function.The $timeout service runs a function after a specified number of milliseconds.
+app.controller('myCtrl114', function($scope, $interval) {
+  $scope.theTime = new Date().toLocaleTimeString();
+  $interval(function () {
+      $scope.theTime = new Date().toLocaleTimeString();
+  }, 1000);
+});
+// The $interval service is AngularJS' version of the window.setInterval function. The $interval service runs a function every specified millisecond.
