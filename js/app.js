@@ -121,3 +121,10 @@ app.controller('myCtrl112', function($scope, $http) {
   });
 });
 // The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.
+app.controller('myCtrl113', function($scope, $timeout) {
+  $scope.myHeader = "Hello World!";
+  $timeout(function () {
+      $scope.myHeader = "How are you today?";
+  }, 2000);
+});
+// The $timeout service is AngularJS' version of the window.setTimeout function.The $timeout service runs a function after a specified number of milliseconds.

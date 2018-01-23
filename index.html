@@ -294,8 +294,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <h3>{{myUrl}}</h3>
             </li>
             <li ng-controller="myCtrl112">
-                <p>Today's welcome message is:</p>
+                <p>($http service) Today's welcome message is:</p>
                 <h1>{{myWelcome}}</h1>
+            </li>
+            <li ng-controller="myCtrl113">
+                <p>($timeout service) This header will change after two seconds:</p>
+                <h1>{{myHeader}}</h1>
             </li>
         </ol>
     </main>
