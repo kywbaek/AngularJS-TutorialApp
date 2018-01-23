@@ -305,6 +305,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <p>($interval service) The time is:</p>
                 <h1>{{theTime}}</h1>
             </li>
+            <li ng-controller="myCtrl115">
+                <p>(custom service) Use a filter when displaying the array [255, 251, 200]:</p>
+                <ul>
+                    <li ng-repeat="x in counts">{{x | myFormat115}}</li>
+                </ul>
+            </li>
         </ol>
     </main>
 

@@ -135,3 +135,17 @@ app.controller('myCtrl114', function($scope, $interval) {
   }, 1000);
 });
 // The $interval service is AngularJS' version of the window.setInterval function. The $interval service runs a function every specified millisecond.
+app.service('hexafy', function() {
+    this.myFunc = function (x) {
+        return x.toString(16);
+    }
+});
+app.filter('myFormat115',['hexafy', function(hexafy) {
+    return function(x) {
+        return hexafy.myFunc(x);
+    };
+}]);
+app.controller('myCtrl115', function($scope) {
+    $scope.counts = [255, 251, 200];
+});
+// This filter uses a custom service that converts numbers into hexadecimal values.
