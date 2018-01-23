@@ -106,3 +106,7 @@ app.filter('myFormat108', function() {
         return txt;
     };
 });
+
+app.controller('myCtrl111', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
