@@ -328,6 +328,14 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <p>($http service with 'GET' method explicitly)</p>
                 <h4>{{myWelcome}}</h4>
             </li>
+            <li ng-controller="customersCtrl123">
+                (reading external JSON data)
+                <ul>
+                    <li ng-repeat="x in myData">
+                        {{ x.Name + ', ' + x.Country }}
+                    </li>
+                </ul>
+            </li>
         </ol>
     </main>
 

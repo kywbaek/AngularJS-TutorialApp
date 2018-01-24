@@ -172,3 +172,12 @@ app.controller('myCtrl122', function($scope, $http) {
         $scope.myWelcome = response.statusText;
     });
 });
+app.controller('customersCtrl123', function($scope, $http) {
+    $http.get("https://www.w3schools.com/angular/customers.php").then(function(response) {
+        $scope.myData = response.data.records;
+    });
+});
+/* $http is an XMLHttpRequest object for requesting external data.
+   $http.get() reads JSON data from https://www.w3schools.com/angular/customers.php.
+   On success, the controller creates a property, myData, in the scope, with JSON data from the server. "records" is a 'key' of the JSON data. */
+
