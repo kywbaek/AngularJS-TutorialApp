@@ -318,7 +318,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
        <!--  $http is an AngularJS service for reading data from remote servers.
         The AngularJS $http service makes a request to the server, and returns a response. -->
         <ol>
-
+            <li ng-controller="myCtrl112">
+                <p>($http service) Today's welcome message is:</p>
+                <h4>content     : {{myWelcome}}</h4>
+                <h4>status code : {{statuscode}}</h4>
+                <h4>status text : {{statusText}}</h4>
+            </li>
         </ol>
     </main>
 

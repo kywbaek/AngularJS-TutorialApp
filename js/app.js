@@ -116,11 +116,22 @@ app.controller('myCtrl111', function($scope, $location) {
 app.controller('myCtrl112', function($scope, $http) {
   $http.get("httpServiceTest.htm").then(function (response) {
       $scope.myWelcome = response.data;
+      $scope.statuscode = response.status;
+      $scope.statustext = response.statusText;
   }, function(response) {
     $scope.myWelcome = "There are errors";
   });
 });
-// The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.
+/* The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.
+The response from the server is an object with these properties:
+
+.config    : the object used to generate the request.
+.data      : a string, or an object, carrying the response from the server.
+.headers   : a function to use to get header information.
+.status    : a number defining the HTTP status.
+.statusText: a string defining the HTTP status.
+To handle errors, add one more functions to the .then method
+*/
 app.controller('myCtrl113', function($scope, $timeout) {
   $scope.myHeader = "Hello World!";
   $timeout(function () {
@@ -135,6 +146,7 @@ app.controller('myCtrl114', function($scope, $interval) {
   }, 1000);
 });
 // The $interval service is AngularJS' version of the window.setInterval function. The $interval service runs a function every specified millisecond.
+
 app.service('hexafy', function() {
     this.myFunc = function (x) {
         return x.toString(16);
