@@ -161,3 +161,14 @@ app.controller('myCtrl115', function($scope) {
     $scope.counts = [255, 251, 200];
 });
 // This filter uses a custom service that converts numbers into hexadecimal values.
+
+app.controller('myCtrl122', function($scope, $http) {
+    $http({
+        method : "GET",
+        url : "httpServiceTest.htm"
+    }).then(function mySuccess(response) {
+        $scope.myWelcome = response.data;
+    }, function myError(response) {
+        $scope.myWelcome = response.statusText;
+    });
+});
