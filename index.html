@@ -361,6 +361,11 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <select ng-model="selectedName" ng-options="x for x in names">
                 </select>
             </li>
+            <li>(A Select Box Using ng-repeat and option tag on array)
+                <select>
+                    <option ng-repeat="x in names">{{x}}</option>
+                </select>
+            </li>
         </ol>
     </main>
 
