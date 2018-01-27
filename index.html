@@ -345,6 +345,7 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 (Ordered by Country)
                 <table>
                   <tr ng-repeat="x in myData | orderBy : 'Country'">
+                    <td>{{ $index + 1 }}</td>
                     <td>{{ x.Name }}</td>
                     <td>{{ x.Country | uppercase}}</td>
                   </tr>
