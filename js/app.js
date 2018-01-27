@@ -182,5 +182,9 @@ app.controller('customersCtrl123', function($scope, $http) {
    On success, the controller creates a property, myData, in the scope, with JSON data from the server. "records" is a 'key' of the JSON data. */
 app.controller('myCtrl14', function($scope) {
     $scope.names = ["Emil", "Tobias", "Linus"];
+    $scope.cars = [{model : "Ford Mustang", color : "red"},
+                    {model : "Fiat 500", color : "white"},
+                    {model : "Volvo XC90", color : "black"}
+                    ];
 });
 
