@@ -341,7 +341,15 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         <hr>
         <h2>13. Tables</h2>
         <ol>
-
+            <li ng-controller="customersCtrl123">
+                (Ordered by Country)
+                <table>
+                  <tr ng-repeat="x in myData | orderBy : 'Country'">
+                    <td>{{ x.Name }}</td>
+                    <td>{{ x.Country }}</td>
+                  </tr>
+                </table>
+            </li>
         </ol>
     </main>
 
