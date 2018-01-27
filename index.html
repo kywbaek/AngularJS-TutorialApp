@@ -374,6 +374,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 </select>
                 <h3>You selected: {{selectedCar}}</h3>
             </li>
+            <li>(A Select Box Using ng-options on object)
+                <select ng-model="selectedCar1" ng-options="x.model for x in cars">
+                </select>
+                <h3>You selected: {{selectedCar1.model}}</h3>
+                <p>Its color is: {{selectedCar1.color}}</p>
+            </li>
         </ol>
     </main>
 
