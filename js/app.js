@@ -186,5 +186,13 @@ app.controller('myCtrl14', function($scope) {
                     {model : "Fiat 500", color : "white"},
                     {model : "Volvo XC90", color : "black"}
                     ];
+    $scope.carsObj = {car01 : "Ford",
+                    car02 : "Fiat",
+                    car03 : "Volvo"
+                    };
+    $scope.carsObj2 = {car01 : {brand : "Ford", model : "Mustang", color : "red"},
+                    car02 : {brand : "Fiat", model : "500", color : "white"},
+                    car03 : {brand : "Volvo", model : "XC90", color : "black"}
+                    };
 });
 
