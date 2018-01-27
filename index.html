@@ -342,7 +342,7 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         <h2>13. Tables</h2>
         <ol>
             <li ng-controller="customersCtrl123">
-                (Ordered by Country)
+                (Ordered by Country, Uppercased country, added $index, and apply style using $odd/even)
                 <table>
                   <tr ng-repeat="x in myData | orderBy : 'Country'">
                     <td ng-if="$odd" style="color: red">{{ $index + 1 }}</td>
