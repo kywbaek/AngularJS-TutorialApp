@@ -391,6 +391,12 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <select ng-model="selectedCar3" ng-options="x for (x, y) in carsObj2"></select>
                 <h3>You selected: {{selectedCar3}}</h3>
             </li>
+            <li>(A Select Box Using ng-options on object setting values as dropdown list elements)
+            <!-- The options in the dropdown list does not have to be the key in a key-value pair, it can also be the value, or a property of the value object -->
+                <select ng-model="selectedCar4" ng-options="y.brand for (x, y) in carsObj2">
+                </select>
+                <h3>You selected: {{selectedCar4.model}}</h3>
+            </li>
         </ol>
     </main>
 
