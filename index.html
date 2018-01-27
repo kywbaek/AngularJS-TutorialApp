@@ -381,9 +381,15 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 <p>Its color is: {{selectedCar1.color}}</p>
             </li>
             <li>(A Select Box Using ng-options on object)
-    <!-- Using an object as the data source, x represents the key, and y represents the value: -->
+    <!-- Using an object as the data source, x represents the key, and y represents the value -->
                 <select ng-model="selectedCar2" ng-options="x for (x, y) in carsObj"></select>
                 <h3>You selected: {{selectedCar2}}</h3>
+            </li>
+            <li>(A Select Box Using ng-options on object where values are objects)
+            <!-- The selected value will always be the value in a key-value pair.
+            The value in a key-value pair can also be an object -->
+                <select ng-model="selectedCar3" ng-options="x for (x, y) in carsObj2"></select>
+                <h3>You selected: {{selectedCar3}}</h3>
             </li>
         </ol>
     </main>
