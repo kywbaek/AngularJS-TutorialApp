@@ -368,13 +368,13 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
             </li>
     <!-- Because the ng-repeat directive repeats a block of HTML code for each item in an array, it can be used to create options in a dropdown list, but the ng-options directive was made especially for filling a dropdown list with options, and has at least one important advantage:
     Dropdowns made with ng-options allows the selected value to be an object, while dropdowns made from ng-repeat has to be a string -->
-            <li>(A Select Box Using ng-repeat on keys of object)
+            <li>(A Select Box Using ng-repeat on keys of object in array)
                 <select ng-model="selectedCar">
                     <option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
                 </select>
                 <h3>You selected: {{selectedCar}}</h3>
             </li>
-            <li>(A Select Box Using ng-options on object)
+            <li>(A Select Box Using ng-options on array of object)
                 <select ng-model="selectedCar1" ng-options="x.model for x in cars">
                 </select>
                 <h3>You selected: {{selectedCar1.model}}</h3>
