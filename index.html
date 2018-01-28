@@ -402,7 +402,16 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         <hr>
         <h2>15. SQL</h2>
         <ol>
-
+            <!-- AngularJS is perfect for displaying data from a Database. Just make sure the data is in JSON format. -->
+            <li ng-controller="customersCtrl15">
+            (Fetching data from an ASP.NET Server running SQL)
+                <table>
+                    <tr ng-repeat="x in names">
+                        <td>{{ x.Name }}</td>
+                        <td>{{ x.Country }}</td>
+                    </tr>
+                </table>
+            </li>
         </ol>
     </main>
 

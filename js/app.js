@@ -195,4 +195,7 @@ app.controller('myCtrl14', function($scope) {
                     car03 : {brand : "Volvo", model : "XC90", color : "black"}
                     };
 });
-
+app.controller('customersCtrl15', function($scope, $http) {
+    $http.get("https://www.w3schools.com/angular/customers_sql.aspx")
+    .then(function (response) {$scope.names = response.data.records;});
+});
