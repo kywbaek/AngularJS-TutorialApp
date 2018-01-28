@@ -431,6 +431,23 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 </p>
                 <!-- The ng-disabled directive binds AngularJS application data to the disabled attribute of HTML elements. -->
             </li>
+            <li ng-init="mySwitch162=true; mySwitch163=false">
+                (The ng-show/ng-hide Directive)
+                <p>
+                <button ng-show="mySwitch162">ng-show directive</button>
+                <button ng-hide="mySwitch163">ng-hide directive</button>
+                </p>
+                <p>
+                <input type="checkbox" ng-model="mySwitch162"/>Button 1
+                <input type="checkbox" ng-model="mySwitch163"/>Button 2
+                </p>
+                <p>
+                The first button is visible by 'ng-show' directive: {{ mySwitch162 }}
+                <br>
+                The second button is hidden by 'ng-hide' directive: {{ mySwitch163 }}
+                </p>
+                <!-- The ng-show/ng-hide directive binds AngularJS application data to the visible attribute of HTML elements. -->
+            </li>
         </ol>
     </main>
 
