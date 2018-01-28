@@ -209,4 +209,10 @@ app.controller('myCtrl17', function($scope) {
     $scope.myFunc4 = function() {
         $scope.showMe4 = !$scope.showMe4;
     };
+    $scope.myFunc5 = function(myE) {
+        $scope.x = myE.clientX;
+        $scope.y = myE.clientY;
+    };
+    // You can pass the $event object as an argument when calling the function.
+    // The $event object contains the browser's event object
 });

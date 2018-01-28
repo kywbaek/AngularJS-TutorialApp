@@ -470,7 +470,7 @@ Or when a mouse button is clicked on an element, in this order:
 You can add mouse events on any HTML element. -->
         <ol ng-controller="myCtrl17">
             <li>(The ng-mousemove directive)
-                <h2 ng-mousemove="count1 = count1 + 1">Mouse over me!</h2>
+                <h3 ng-mousemove="count1 = count1 + 1">Mouse over me!</h3>
                 <p>"mouse move" count: {{ count1 }}</p>
             </li>
             <li>(The ng-click directive)
@@ -486,6 +486,10 @@ You can add mouse events on any HTML element. -->
                     <div>Pasta</div>
                     <div>Pesce</div>
                 </div>
+            </li>
+            <li>($event Object)
+            <h3 ng-mousemove="myFunc5($event)">Mouse Over Me!</h3>
+            <p>Coordinates: {{x + ', ' + y}}</p>
             </li>
         </ol>
     </main>
