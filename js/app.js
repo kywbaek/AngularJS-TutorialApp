@@ -201,4 +201,5 @@ app.controller('customersCtrl15', function($scope, $http) {
 });
 app.controller('myCtrl17', function($scope) {
     $scope.count1 = 0;
+    $scope.count2 = 0;
 });
