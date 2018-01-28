@@ -448,6 +448,11 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
                 </p>
                 <!-- The ng-show/ng-hide directive binds AngularJS application data to the visible attribute of HTML elements. -->
             </li>
+            <li ng-init="hour=13">
+                (Using expression for ng-show)
+                <p ng-show="hour > 12">I am visible.</p>
+                <!-- Any expression that evaluates to true or false can be used -->
+            </li>
         </ol>
     </main>
 
