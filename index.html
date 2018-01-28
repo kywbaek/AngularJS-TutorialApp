@@ -417,7 +417,19 @@ ng-empty, ng-not-empty, ng-touched, ng-untouched, ng-valid, ng-invalid, ng-dirty
         <hr>
         <h2>16. DOM</h2>
         <ol>
-
+            <li ng-init="mySwitch=true">
+                (The ng-disabled Directive)
+                <p>
+                <button ng-disabled="mySwitch">Click Me!</button>
+                </p>
+                <p>
+                <input type="checkbox" ng-model="mySwitch"/>Button
+                </p>
+                <p>
+                The button is disabled by 'ng-disabled' directive: {{ mySwitch }}
+                </p>
+                <!-- The ng-disabled directive binds AngularJS application data to the disabled attribute of HTML elements. -->
+            </li>
         </ol>
     </main>
 
