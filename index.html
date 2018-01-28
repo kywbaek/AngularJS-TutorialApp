@@ -478,6 +478,15 @@ You can add mouse events on any HTML element. -->
                 <button ng-click="myFunction3()">Click me! (refering to a function)</button>
                 <p>"mouse click" count: {{ count2 }}</p>
             </li>
+            <li>(Toggle button using ng-click/ng-show/function)
+                <button ng-click="myFunc4()">Click Me to toggle Menu</button>
+                <div ng-show="showMe4">
+                    <h3>Menu:</h3>
+                    <div>Pizza</div>
+                    <div>Pasta</div>
+                    <div>Pesce</div>
+                </div>
+            </li>
         </ol>
     </main>
 

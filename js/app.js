@@ -203,6 +203,10 @@ app.controller('myCtrl17', function($scope) {
     $scope.count1 = 0;
     $scope.count2 = 0;
     $scope.myFunction3 = function() {
-    $scope.count2++;
-    }
+        $scope.count2++;
+    };
+    $scope.showMe4 = false;
+    $scope.myFunc4 = function() {
+        $scope.showMe4 = !$scope.showMe4;
+    };
 });
