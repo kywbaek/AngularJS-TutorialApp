@@ -199,3 +199,6 @@ app.controller('customersCtrl15', function($scope, $http) {
     $http.get("https://www.w3schools.com/angular/customers_sql.aspx")
     .then(function (response) {$scope.names = response.data.records;});
 });
+app.controller('myCtrl17', function($scope) {
+    $scope.count1 = 0;
+});
