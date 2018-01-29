@@ -280,3 +280,11 @@ app.directive('myDirective194', function() {
     }
   };
 });
+/* In the JavaScript we start by adding a new directive named myDirective.
+Remember, when naming a directive, you must use a camel case name, myDirective, but when invoking it, you must use - separated name, my-directive.
+Then, return an object where you specify that we require  ngModel, which is the ngModelController.
+Make a linking function which takes some arguments, where the fourth argument, mCtrl, is the ngModelController,
+Then specify a function, in this case named myValidation, which takes one argument, this argument is the value of the input element.
+Test if the value contains the letter "e", and set the validity of the model controller to either true or false.
+At last, mCtrl.$parsers.push(myValidation); will add the myValidation function to an array of other functions, which will be executed every time the input value changes. */
+
