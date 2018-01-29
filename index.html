@@ -559,6 +559,11 @@ You can use standard HTML5 attributes to validate input, or you can make your ow
                 <p>The input is an e-mail:</p>
                 <h3>{{myForm192.myInput192.$valid}}</h3>
             </li>
+            <li>(Custom Validation: valid if it contains "e")
+                <form name="myForm194">
+                    <input name="myInput194" ng-model="myInput194" required my-directive194>
+                </form>
+            </li>
         </ol>
     </main>
 

@@ -264,3 +264,19 @@ The following classes are added to, or removed from, forms:
     ng-valid-key One key for each validation. Example: ng-valid-required, useful when there are more than one thing that must be validated
     ng-invalid-key Example: ng-invalid-required
 */
+app.directive('myDirective194', function() {
+  return {
+    require: 'ngModel',
+    link: function(scope, element, attr, mCtrl) {
+      function myValidation(value) {
+        if (value.indexOf("e") > -1) {
+          mCtrl.$setValidity('charE', true);
+        } else {
+          mCtrl.$setValidity('charE', false);
+        }
+        return value;
+      }
+      mCtrl.$parsers.push(myValidation);
+    }
+  };
+});
