@@ -1,7 +1,9 @@
 input.ng-invalid {
-    background-color: lightblue;
+    background-color: pink;
 }
-
+input.ng-valid {
+    background-color: lightgreen;
+}
 table, th , td {
   border: 1px solid grey;
   border-collapse: collapse;
