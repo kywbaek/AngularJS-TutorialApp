@@ -498,6 +498,12 @@ You can add mouse events on any HTML element. -->
         <ol>
         <!-- Forms in AngularJS provides data-binding and validation of input controls.
         input elements, select elements, button elements, textarea elements -->
+            <li>(input element type="checkbox")
+                <form>Check to show a header:
+                    <input type="checkbox" ng-model="myVar">
+                </form>
+                <h3 ng-show="myVar">My Header</h3>
+            </li>
         </ol>
     </main>
 
