@@ -548,8 +548,16 @@ You can use standard HTML5 attributes to validate input, or you can make your ow
                 <form name="myForm191">
                     <input name="myInput191" ng-model="myInput191" required>
                 </form>
-                <p>The input's valid state is:</p>
+                <p>The input is filled out:</p>
                 <h3>{{myForm191.myInput191.$valid}}</h3>
+            </li>
+            <li>(E-mail)
+            <!-- Use the HTML5 type email to specify that the value must be an e-mail -->
+                <form name="myForm192">
+                    <input name="myInput192" ng-model="myInput192" type="email" required>
+                </form>
+                <p>The input is an e-mail:</p>
+                <h3>{{myForm192.myInput192.$valid}}</h3>
             </li>
         </ol>
     </main>
