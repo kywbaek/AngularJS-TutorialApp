@@ -564,6 +564,29 @@ You can use standard HTML5 attributes to validate input, or you can make your ow
                     <input name="myInput194" ng-model="myInput194" required my-directive194>
                 </form>
             </li>
+            <li>(Validation with warning messages)
+                <form ng-controller="validateCtrl195" name="form195" novalidate>
+                <p>Username:
+                  <input type="text" name="user" ng-model="user" required>
+                  <span style="color:red" ng-show="form195.user.$dirty && form195.user.$invalid">
+                      <span ng-show="form195.user.$error.required">Username is required.</span>
+                  </span>
+                </p>
+                <p>Email:
+                  <input type="email" name="email" ng-model="email" required>
+                  <span style="color:red" ng-show="form195.email.$dirty && form195.email.$invalid">
+                      <span ng-show="form195.email.$error.required">Email is required.</span>
+                      <span ng-show="form195.email.$error.email">Invalid email address.</span>
+                  </span>
+                </p>
+                <p>
+                  <input type="submit"
+                  ng-disabled="form195.user.$dirty && form195.user.$invalid ||
+                  form195.email.$dirty && form195.email.$invalid">
+                  Enabled only when both Username and Email fields are valid
+                </p>
+                </form>
+            </li>
         </ol>
     </main>
 

@@ -287,4 +287,7 @@ Make a linking function which takes some arguments, where the fourth argument, m
 Then specify a function, in this case named myValidation, which takes one argument, this argument is the value of the input element.
 Test if the value contains the letter "e", and set the validity of the model controller to either true or false.
 At last, mCtrl.$parsers.push(myValidation); will add the myValidation function to an array of other functions, which will be executed every time the input value changes. */
-
+app.controller('validateCtrl195', function($scope) {
+    $scope.user = 'Jay Bruce';
+    $scope.email = 'jay.bruce@gmail.com';
+});
