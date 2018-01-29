@@ -216,3 +216,10 @@ app.controller('myCtrl17', function($scope) {
     // You can pass the $event object as an argument when calling the function.
     // The $event object contains the browser's event object
 });
+app.controller('formCtrl184', function($scope) {
+    $scope.original = {firstName: "Roger", lastName: "Federer"};
+    $scope.reset = function() {
+        $scope.user = angular.copy($scope.original);
+    };
+    $scope.reset();
+});

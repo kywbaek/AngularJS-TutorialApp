@@ -524,6 +524,16 @@ You can add mouse events on any HTML element. -->
                     </select>
                 </form>
             </li>
+            <li ng-controller="formCtrl184">(button element for reset using function)
+                <form novalidate>
+            <!-- The novalidate attribute is new in HTML5. It disables any default browser validation. The novalidate attribute is not needed for this application, but normally you will use it in AngularJS forms, to override standard HTML5 validation. -->
+                    First Name:<input type="text" ng-model="user.firstName"><br>
+                    Last Name:<input type="text" ng-model="user.lastName"><br>
+                    <button ng-click="reset()">RESET</button>
+                </form>
+                <p>form = {{user}}</p>
+                <p>original = {{original}}</p>
+            </li>
         </ol>
     </main>
 
