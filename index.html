@@ -501,9 +501,17 @@ You can add mouse events on any HTML element. -->
             <li>(input element type="checkbox")
            <!-- A checkbox has the value true or false. Apply the ng-model directive to a checkbox, and use its value in your application. -->
                 <form>Check to show a header:
-                    <input type="checkbox" ng-model="myVar">
+                    <input type="checkbox" ng-model="myVar181">
                 </form>
-                <h3 ng-show="myVar">My Header</h3>
+                <h3 ng-show="myVar181">My Header</h3>
+            </li>
+            <li>(input element type="radio")
+    <!-- Bind radio buttons to your application with the ng-model directive. Radio buttons with the same ng-model can have different values, but only the selected one will be used. -->
+                <form>Pick a topic(currently selected {{ myVar182 }}):
+                    <input type="radio" ng-model="myVar182" value="dogs">Dogs
+                    <input type="radio" ng-model="myVar182" value="tuts">Tutorials
+                    <input type="radio" ng-model="myVar182" value="cars">Cars
+                </form>
             </li>
         </ol>
     </main>
