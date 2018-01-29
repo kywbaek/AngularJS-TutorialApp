@@ -4,6 +4,12 @@ input.ng-invalid {
 input.ng-valid {
     background-color: lightgreen;
 }
+form.ng-pristine {
+    background-color: lightblue;
+}
+form.ng-dirty {
+    background-color: pink;
+}
 table, th , td {
   border: 1px solid grey;
   border-collapse: collapse;
