@@ -543,7 +543,14 @@ AngularJS monitors the state of the form and input fields (input, textarea, sele
 AngularJS also holds information about whether they have been touched, or modified, or not.
 You can use standard HTML5 attributes to validate input, or you can make your own validation functions. -->
         <ol>
-
+            <li>(Required)
+    <!-- Use the HTML5 attribute required to specify that the input field must be filled out -->
+                <form name="myForm191">
+                    <input name="myInput191" ng-model="myInput191" required>
+                </form>
+                <p>The input's valid state is:</p>
+                <h3>{{myForm191.myInput191.$valid}}</h3>
+            </li>
         </ol>
     </main>
 
