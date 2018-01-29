@@ -513,6 +513,17 @@ You can add mouse events on any HTML element. -->
                     <input type="radio" ng-model="myVar182" value="cars">Cars
                 </form>
             </li>
+            <li>(select element with options)
+    <!-- Bind select boxes to your application with the ng-model directive. The property defined in the ng-model attribute will have the value of the selected option in the selectbox. -->
+                <form>Select a topic(currently selected {{ myVar183 }}):
+                    <select ng-model="myVar183">
+                        <option value="">
+                        <option value="dogs">Dogs
+                        <option value="tuts">Tutorials
+                        <option value="cars">Cars
+                    </select>
+                </form>
+            </li>
         </ol>
     </main>
 
