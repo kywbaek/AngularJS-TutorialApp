@@ -296,4 +296,5 @@ app.controller('myCtrl20', function($scope) {
     $scope.func201 = () => angular.lowercase($scope.x);
     $scope.func202 = () => angular.uppercase($scope.x);
     $scope.func203 = () => angular.isString($scope.x);
+    $scope.func204 = () => angular.isNumber($scope.x);
 });
