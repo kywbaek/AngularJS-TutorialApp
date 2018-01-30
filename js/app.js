@@ -292,6 +292,7 @@ app.controller('validateCtrl195', function($scope) {
     $scope.email = 'jay.bruce@gmail.com';
 });
 app.controller('myCtrl20', function($scope) {
-    $scope.x = "Matt LeBlanc"
+    $scope.x = "Matt LeBlanc";
     $scope.func201 = () => angular.lowercase($scope.x);
+    $scope.func202 = () => angular.uppercase($scope.x);
 });
