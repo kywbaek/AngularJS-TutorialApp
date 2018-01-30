@@ -298,3 +298,11 @@ app.controller('myCtrl20', function($scope) {
     $scope.func203 = () => angular.isString($scope.x);
     $scope.func204 = () => angular.isNumber($scope.x);
 });
+app.config(function($sceDelegateProvider) {
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'https://tryit.w3schools.com/**',
+    '**'
+  ]);
+});
+// By default, the ng-include directive does not allow you to include files from other domains.
+// To include files from another domain, you can add a whitelist of legal files and/or domains in the config function of your application ('**' allows all domain)
