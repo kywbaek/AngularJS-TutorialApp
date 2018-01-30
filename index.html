@@ -591,7 +591,7 @@ You can use standard HTML5 attributes to validate input, or you can make your ow
 
         <hr>
         <h2>20. API</h2>
-        <ol>
+        <ol ng-controller="myCtrl20">
 <!-- AngularJS Global API
 The AngularJS Global API is a set of global JavaScript functions for performing common tasks like:
     Comparing objects / Iterating objects / Converting data
@@ -601,6 +601,10 @@ Below is a list of some common API functions:
     angular.uppercase() Converts a string to uppercase
     angular.isString()  Returns true if the reference is a string
     angular.isNumber()  Returns true if the reference is a number -->
+            <input type="text" ng-model="x">
+            <li>
+                <p>angular.lowercase(): {{ func201() }}</p>
+            </li>
         </ol>
     </main>
 
