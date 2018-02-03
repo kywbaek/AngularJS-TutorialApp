@@ -21,3 +21,13 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
   background-color: #ffffff;
 }
+
+.aniDiv1 {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+}
+
+.ng-hide.ng-hide {
+  height: 10px;
+}

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!-- Calls to angular.module can only be compiled after the library has been loaded. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <!-- either use <body ng-app="ngAnimate"> or if application already has a name, add ngAnimate as a dependency in application module(in 'app.js') -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -623,6 +625,10 @@ Below is a list of some common API functions:
         <ol>
     <!-- AngularJS provides animated transitions, with help from CSS.
     An animation is when the transformation of an HTML element gives you an illusion of motion. -->
+            <li>(CSS Transition)
+                <h3>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h3>
+                <div class="aniDiv1" ng-hide="myCheck"></div>
+            </li>
         </ol>
     </main>
 

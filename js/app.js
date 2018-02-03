@@ -1,4 +1,4 @@
-const app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngAnimate']);
 
 app.controller('myCtrl', function($scope) {
     $scope.firstName2= "John";
