@@ -28,6 +28,24 @@ table tr:nth-child(even) {
   height: 100px;
 }
 
-.ng-hide.ng-hide {
-  height: 10px;
+/*.ng-hide {
+  height: 0;
+}*/
+/*with transition*/
+
+@keyframes myChange {
+  from {
+      height: 100px;
+  } to {
+      height: 0;
+  }
+}
+
+div.aniDiv2 {
+  height: 100px;
+  background-color: pink;
+}
+
+div.ng-hide {
+  animation: 0.5s myChange;
 }
