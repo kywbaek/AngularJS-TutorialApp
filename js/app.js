@@ -306,3 +306,18 @@ app.config(function($sceDelegateProvider) {
 });
 // By default, the ng-include directive does not allow you to include files from other domains.
 // To include files from another domain, you can add a whitelist of legal files and/or domains in the config function of your application ('**' allows all domain)
+
+// The ngAnimate module adds and removes classes.
+// The ngAnimate module does not animate your HTML elements, but when ngAnimate notice certain events, like hide or show of an HTML element, the element gets some pre-defined classes which can be used to make animations.
+// The directives in AngularJS who add/remove classes are:
+//     ng-show,ng-hide,ng-class,ng-view,ng-include,ng-repeat,ng-if,ng-switch
+// The ng-show and ng-hide directives adds or removes a ng-hide class value.
+// The other directives adds a ng-enter class value when they enter the DOM, and a ng-leave attribute when they are removed from the DOM.
+// The ng-repeat directive also adds a ng-move class value when the HTML element changes position.
+// In addition, during the animation, the HTML element will have a set of class values, which will be removed when the animation has finished. Example: the ng-hide directive will add these class values:
+//     ng-animate
+//     ng-hide-animate
+//     ng-hide-add (if the element will be hidden)
+//     ng-hide-remove (if the element will be showed)
+//     ng-hide-add-active (if the element will be hidden)
+//     ng-hide-remove-active (if the element will be showed)
