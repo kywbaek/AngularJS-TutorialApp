@@ -325,7 +325,7 @@ app.config(function($sceDelegateProvider) {
 app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
-    templateUrl : "main.htm"
+    template : "<h1>Main</h1><h3>No city has been chosen. New York is great!</h3>"
   })
   .when("/london", {
     templateUrl : "london.htm",
