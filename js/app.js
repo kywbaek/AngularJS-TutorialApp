@@ -356,6 +356,7 @@ app.controller("myCtrl24", function($scope) {
         }
     }
     $scope.removeItem = function(i) {
+        $scope.dupItemMsg = "";
         $scope.products.splice(i,1);
     }
 });
