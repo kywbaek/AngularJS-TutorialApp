@@ -324,9 +324,6 @@ app.config(function($sceDelegateProvider) {
 
 app.config(function($routeProvider) {
   $routeProvider
-  .when("/", {
-    template : "<h1>Main</h1><h3>No city has been chosen. New York is great!</h3>"
-  })
   .when("/london", {
     templateUrl : "london.htm",
     controller : "londonCtrl"
@@ -334,6 +331,9 @@ app.config(function($routeProvider) {
   .when("/paris", {
     templateUrl : "paris.htm",
     controller : "parisCtrl"
+  })
+  .otherwise({
+    template : "<h1>Main</h1><h3>No city has been chosen. New York is great!</h3>"
   });
 });
 app.controller("londonCtrl", function ($scope) {
@@ -342,3 +342,4 @@ app.controller("londonCtrl", function ($scope) {
 app.controller("parisCtrl", function ($scope) {
     $scope.msg = "I love Paris";
 });
+/*The otherwise method is the default route when none of the others get a match.*/
