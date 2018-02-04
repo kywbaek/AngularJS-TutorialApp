@@ -360,3 +360,5 @@ app.controller("myCtrl24", function($scope) {
         $scope.products.splice(i,1);
     }
 });
+
+// https://www.w3schools.com/angular/angular_ref_directives.asp => Reference
