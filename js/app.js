@@ -343,3 +343,7 @@ app.controller("parisCtrl", function ($scope) {
     $scope.msg = "I love Paris";
 });
 /*The otherwise method is the default route when none of the others get a match.*/
+
+app.controller("myCtrl24", function($scope) {
+    $scope.products = ['apple', 'can tuna', 'ice cream'];
+});
