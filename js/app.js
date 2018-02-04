@@ -346,4 +346,7 @@ app.controller("parisCtrl", function ($scope) {
 
 app.controller("myCtrl24", function($scope) {
     $scope.products = ['apple', 'can tuna', 'ice cream'];
+    $scope.addItem = function() {
+        $scope.products.push($scope.newItem);
+    }
 });
