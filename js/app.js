@@ -347,7 +347,13 @@ app.controller("parisCtrl", function ($scope) {
 app.controller("myCtrl24", function($scope) {
     $scope.products = ['apple', 'can tuna', 'ice cream'];
     $scope.addItem = function() {
-        $scope.products.push($scope.newItem);
+        $scope.dupItemMsg = "";
+        if (!$scope.newItem) { return; }
+        if ($scope.products.indexOf($scope.newItem)===-1) {
+            $scope.products.push($scope.newItem);
+        } else {
+            $scope.dupItemMsg = "The item is alreay in your shopping list.";
+        }
     }
     $scope.removeItem = function(i) {
         $scope.products.splice(i,1);
