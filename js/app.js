@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngAnimate']);
+var app = angular.module('myApp', ['ngAnimate',"ngRoute"]);
 
 app.controller('myCtrl', function($scope) {
     $scope.firstName2= "John";
@@ -321,3 +321,16 @@ app.config(function($sceDelegateProvider) {
 //     ng-hide-remove (if the element will be showed)
 //     ng-hide-add-active (if the element will be hidden)
 //     ng-hide-remove-active (if the element will be showed)
+
+app.config(function($routeProvider) {
+  $routeProvider
+  .when("/", {
+    templateUrl : "main.htm"
+  })
+  .when("/london", {
+    templateUrl : "london.htm"
+  })
+  .when("/paris", {
+    templateUrl : "paris.htm"
+  });
+});

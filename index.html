@@ -5,6 +5,7 @@
     <!-- Calls to angular.module can only be compiled after the library has been loaded. -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
     <!-- either use <body ng-app="ngAnimate"> or if application already has a name, add ngAnimate as a dependency in application module(in 'app.js') -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -126,10 +127,10 @@
                 <!-- directive: test-directive51 -->
             </li>
 <!--             You can invoke a directive by using:
-            Element name - <test-directive></test-directive>
-            Attribute - <div test-directive></div>
-            Class - <div class="test-directive"></div>
-            Comment - "directive: test-directive" -->
+            Element name -  <test-directive></test-directive>
+            Attribute -     <div test-directive></div>
+            Class -         <div class="test-directive"></div>
+            Comment -       "directive: test-directive" -->
         </ol>
 
         <hr>
@@ -639,6 +640,13 @@ Below is a list of some common API functions:
         <h2>23. Routing</h2>
         <ol>
         <!-- The ngRoute module helps the application to become a Single Page Application(SPA), with no page reloading. The ngRoute module routes the application to different pages without reloading the entire application. -->
+<li>($routeProvider)
+    <a href="#/!">Main</a>
+    <a href="#!london">City 1</a>
+    <a href="#!paris">City 2</a>
+    <div ng-view></div>
+    <p>Click on the links.(This example uses the ng-view directive as an attribute to a DIV element)</p>
+</li>
         </ol>
     </main>
 
