@@ -328,9 +328,17 @@ app.config(function($routeProvider) {
     templateUrl : "main.htm"
   })
   .when("/london", {
-    templateUrl : "london.htm"
+    templateUrl : "london.htm",
+    controller : "londonCtrl"
   })
   .when("/paris", {
-    templateUrl : "paris.htm"
+    templateUrl : "paris.htm",
+    controller : "parisCtrl"
   });
+});
+app.controller("londonCtrl", function ($scope) {
+    $scope.msg = "I love London";
+});
+app.controller("parisCtrl", function ($scope) {
+    $scope.msg = "I love Paris";
 });
