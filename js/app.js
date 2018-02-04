@@ -349,4 +349,7 @@ app.controller("myCtrl24", function($scope) {
     $scope.addItem = function() {
         $scope.products.push($scope.newItem);
     }
+    $scope.removeItem = function(i) {
+        $scope.products.splice(i,1);
+    }
 });
